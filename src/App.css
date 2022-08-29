@@ -1,0 +1,338 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.all {
+    background: url('https://images.unsplash.com/photo-1458253756247-1e4ed949191b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGZvb2QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    resize: both;
+  overflow: scroll;
+}
+
+#form {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    height: 100vh;
+
+}
+
+.acform {
+    width: 70vh;
+}
+
+.container1 {
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    height: 85vh;
+}
+
+.card {}
+
+
+.cardimg {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.cardbody {
+    padding: 10px;
+    text-align: center;
+    display: hide;
+
+}
+
+.cardcont {
+    margin-inline: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardimg:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.13);
+    display: block;
+}
+
+.imging {
+    display: flex;
+    margin-bottom: 4%;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.detcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    height: 100%;
+    
+}
+
+.recimg {
+    width: 100%;
+    max-height: 350px;
+    border-radius: 1rem;
+
+}
+
+#steps h2 {
+    margin: 3vh;
+}
+
+.lin {
+    text-decoration: none;
+    color: white;
+}
+
+.lin:hover {
+    color: white;
+}
+
+#box1 {
+    height: 3rem;
+}
+
+@media only screen and (max-width:768px) {
+    .imging {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recimg {
+        width: 100%;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+    }
+
+    .recipes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .acform {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #form {
+        padding: 2rem;
+        display: flex;
+
+    }
+
+    .child {
+
+        padding: 0;
+        padding-inline: 0;
+
+    }
+
+
+
+
+}
+
+@media (min-width:768px) and (max-width:1000px) {
+    .acform {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #form {
+        padding: 2rem;
+        display: flex;
+
+    }
+
+    .child {
+
+        padding: 0;
+
+
+    }
+
+}
+
+@media (min-width:1000px) {
+    .child {
+        padding-inline: 10rem
+    }
+}
+
+
+
+
+.loginbox {
+    width: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    color: black;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5));
+    border-radius: 20px;
+}
+
+.bgimg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://static.visitestonia.com/images/3608181/1600_900_false_false_fe626e77138b2e98a4241e08704b15c4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%
+}
+
+.child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+
+@media only screen and (max-width:768px) {
+    .loginbox {
+        padding: 4px;
+        margin: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        color: black;
+        background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5));
+        border-radius: 20px;
+        
+            
+        
+    }
+    .all {
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media only screen and (max-height:440px) {
+    .loginbox {
+        height: 90%;
+        padding: 1rem;
+        width: 100%;
+
+        margin: 2rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+}
+
+
+.tilte {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.rectitle {
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.smbox {
+    height: 5vh;
+    width: 10px;
+    background-color: green;
+    margin-bottom: 15px;
+}
+
+.flexem2 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 4vh;
+    margin-top: 4vh;
+}
+
+.flexem {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 4vh;
+}
+
+.Footer {
+
+    opacity: 1;
+}
+
+.flexfooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 7vh;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 1;
+    color: white;
+}
+
+
+
+.use{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20vh;
+}
